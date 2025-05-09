@@ -1,10 +1,16 @@
 {
   "name": "@anubix_47/fast-hot-keys",
-  "version": "0.1.1",
+  "private":false,
+  "version": "0.1.2",
   "description": "Un hook personalizado para capturar una combinación de teclas y ejecutar una función especificada",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+    "exports":{
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+  
   "files": [
     "dist"
   ],
@@ -32,4 +38,5 @@
   "publishConfig": {
     "access": "public"
   }
+
 }
