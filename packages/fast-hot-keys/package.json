@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tu-usua",
+    "url": "https://github.com/Anubix47/faster-hot-keys.git",
     "directory": "packages/fast-hot-keys"
   },
   "keywords": ["react", "hook", "typescript, hotkey"],
