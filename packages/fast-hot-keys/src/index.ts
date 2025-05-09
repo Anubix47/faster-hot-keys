@@ -1,0 +1,1 @@
+export {default as fastKey} from './faster-hot-keys'
