@@ -1,22 +1,35 @@
 {
   "name": "@anubix_47/fast-hot-keys",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Un hook personalizado para capturar una combinación de teclas y ejecutar una función especificada",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "react": "^19.0.0"
   },
   "scripts": {
-    "build": "tsup"
+    "build": "tsup src/index.ts --format esm,cjs --dts"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Anubix47/faster-hot-keys.git",
     "directory": "packages/fast-hot-keys"
   },
-  "keywords": ["react", "hook", "typescript, hotkey"],
-  "license": "MIT"
+  "keywords": [
+    "react",
+    "hook",
+    "typescript, hotkey"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
