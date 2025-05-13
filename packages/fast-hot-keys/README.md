@@ -16,4 +16,39 @@ npm install fast-hot-keys
 # o con Yarn
 yarn add fast-hot-keys
 
+```
 
+### Uso 
+
+```tsx
+import { useState } from 'react'
+import { fastKey } from 'fast-hot-keys'
+
+function App() {
+  const [text, setText] = useState("")
+
+  fastKey("AltLeft+KeyA", () => console.log(text), [text])
+
+  return (
+    <div>
+      <input
+        type="text"
+        value={text}
+        onChange={e => setText(e.target.value)}
+        placeholder="Escribe algo y luego pulsa Alt+A"
+      />
+    </div>
+  )
+}
+
+export default App
+
+```
+
+### API 
+
+| Parámetro        | Tipo         | Descripción                                                                            |
+| ---------------- | ------------ | -------------------------------------------------------------------------------------- |
+| `keyCombination` | `string`     | Cadena con la combinación de teclas en formato `event.code` (p. ej. `"AltLeft+KeyA"`). |
+| `callback`       | `() => void` | Función que se ejecutará cuando se detecte la combinación.                             |
+| `dependencies`   | `any[]`      | Array de dependencias al estilo de React; al cambiar, se rebindea el atajo.            |
