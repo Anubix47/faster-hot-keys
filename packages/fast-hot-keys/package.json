@@ -1,7 +1,7 @@
 {
-  "name": "@anubix_47/fast-hot-keys",
+  "name": "fast-hot-keys",
   "private":false,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Un hook personalizado para capturar una combinación de teclas y ejecutar una función especificada",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -28,7 +28,8 @@
   "keywords": [
     "react",
     "hook",
-    "typescript, hotkey"
+    "typescript", 
+    "hotkey"
   ],
   "license": "MIT",
   "devDependencies": {
